@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string str="listen";
+	int length=str.length();
+	for(int i=0;i<length;i++)
+	{
+		for(int j=i+1;j<length;j++)
+		{
+			if(str[i]>str[j])
+			{
+				char temp=str[i];
+				str[i]=str[j];
+				str[j]=temp;
+			}
+		}
+			}
+	string str2="silent";
+	int length2=str2.length();
+	for(int i=0;i<length2;i++)
+	{
+		for(int j=i+1;j<length2;j++)
+		{
+			if(str2[i]>str2[j])
+			{
+				char temp=str2[i];
+				str2[i]=str2[j];
+				str2[j]=temp;
+			}
+		}
+	}
+	if(str==str2)
+	{
+		cout<<"IT is Anagram";
+	}
+	else
+	{
+		cout<<"It is not anagram";
+	}
+}
