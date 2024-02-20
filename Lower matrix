@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+main(){
+    int a[3][3];
+    cout<<"enter 1st matrix";
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            cin>>a[i][j];
+        }
+    }
+    cout<<"Entered matrix is";
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            cout<<a[i][j]<<"\t";
+        }
+        cout<<"\n";
+    }
+    cout<<"Lower matrix is";
+    for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+		if(i<j)
+		{
+			cout<<"0"<<" ";
+		}
+		else
+		cout<<a[i][j]<<"\t";
+		}
+		cout<<endl;
+		}	
+}
